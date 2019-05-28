@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.main-container {
+    margin: 20px;
+}
+
+.row {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.column-50 {
+    width: 50%;
+    float: left;
+    display: table;
+}
+
+.column-33 {
+    width: 33%;
+    float: left;
+    display: table;
+}
+
+.search-field,
+.search-option,
+.search-button,
+.sort-option {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .column-50,
+    .column-33 {
+        display: block;
+        width: 100%;
+        float: none;
+        margin: 5px 0 5px 0;
+    }
+}
